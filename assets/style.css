@@ -65,6 +65,113 @@ gap: 2em;
     grid-area: kira;
   }
 
+  .card{
+    border-radius: 1em;
+    padding: 2em;
+    margin: 2em 0;
+  }
+
+  .card .header{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 4em 1fr;
+      grid-template-columns: 4em 1fr;
+  -ms-grid-rows: 1.5em 1.5em;
+      grid-template-rows: 1.5em 1.5em;
+      grid-template-areas: "pic name" "pic position";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+  }
+
+  .card .header img{
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: pic;
+    border-radius: 60%;
+    width: 4em;
+    border: 4px solid #cfcfcf;
+
+  }
+
+  .card .header .name{
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: name;
+    color: #cfcfcf;
+    font-weight: 600;
+
+  }
+
+  .card .header .position{
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: position;
+    color: #cfcfcf;
+    opacity: 50%;
+
+  }
+
+  .card .lead {
+    color: #cfcfcf;
+    font-weight: 600;
+    margin: 1em 0;
+  }
+
+  .card .quote {
+    color: #cfcfcf;
+    opacity: 70%;
+    font-weight: 500;
+  }
+
+  .daniel {
+    background-color: #6c30cc;
+    position: relative;
+    z-index: 0;
+  }
+
+  .daniel .bg-quote {
+    position: absolute;
+    top: 0;
+    right: 2em;
+    z-index: -1;
+  }
+
+  .jonathan {
+    background-color: #414b5a;
+  }
+  
+  .jeanette {
+    background-color: white;
+  }
+
+  .jeanette .lead,
+.jeanette .quote,
+.jeanette .header .name,
+.jeanette .header .position {
+  color: black;
+}
+
+.patrick {
+    background-color: #19212e;
+  }
+
+  .kira {
+    background-color: white;
+  }
+  
+  .kira .lead,
+  .kira .quote,
+  .kira .header .name,
+  .kira .header .position {
+    color: black;
+  }
+  
+  
+  
+
 
 
 
@@ -91,8 +198,14 @@ gap: 2em;
 
 .attribution {
     font-size: 11px;
-    text-align: center;
-    margin-bottom: 2em;
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin: 0;
+
+
   }
   
   .attribution a {
