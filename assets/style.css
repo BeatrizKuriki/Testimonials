@@ -1,8 +1,22 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+
 body{
     position: absolute;
     width: 1110px;
     height: 572px;
+    display: grid;
+}
+
+.testemonial1{
+    background-color: #733FC8;
+    position: absolute;
+    width: 540px;
+    height: 282px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+
 }
 
 
