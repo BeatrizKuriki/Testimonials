@@ -12,6 +12,7 @@ body {
     background-color: #ecf2f8;
   }
 
+  
   .container{
     max-width: 90%;
     margin: 1em auto;
@@ -92,7 +93,7 @@ gap: 2em;
     grid-area: pic;
     border-radius: 60%;
     width: 4em;
-    border: 4px solid #cfcfcf;
+    border: 4px solid #A775F1;
 
   }
 
@@ -127,7 +128,7 @@ gap: 2em;
   }
 
   .daniel {
-    background-color: #6c30cc;
+    background-color: #733FC8;
     position: relative;
     z-index: 0;
   }
@@ -140,7 +141,7 @@ gap: 2em;
   }
 
   .jonathan {
-    background-color: #414b5a;
+    background-color: #48556A;
   }
   
   .jeanette {
@@ -155,7 +156,7 @@ gap: 2em;
 }
 
 .patrick {
-    background-color: #19212e;
+    background-color: #19202D;
   }
 
   .kira {
