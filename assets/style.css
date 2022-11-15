@@ -1,10 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 
-}
 
 body {
     font-family: "Barlow Semi Condensed", sans-serif;
@@ -21,9 +15,9 @@ body {
   .container .main-card{
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-columns: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
--ms-grid-rows: 1fr 1fr;
+     grid-rows: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 gap: 2em;
     grid-template-areas: "daniel   daniel  jonathan kira" "jeanette patrick patrick  kira";
@@ -34,35 +28,35 @@ gap: 2em;
   }
 
   .container .daniel{
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
+    grid-row: 1;
+    grid-column: 1;
+    grid-column-span: 2;
     grid-area: daniel;
   }
 
   .container .jonathan {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
+    grid-row: 1;
+    grid-column: 3;
     grid-area: jonathan;
   }
   
   .container .jeanette {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: jeanette;
+  grid-row: 2;
+  grid-column: 1;
+  grid-area: jeanette;
   }
 
   .container .patrick {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
+    grid-row: 2;
+    grid-column: 2;
+    grid-column-span: 2;
     grid-area: patrick;
   }
 
   .container .kira {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 4;
+  grid-row: 1;
+  grid-row-span: 2;
+  grid-column: 4;
     grid-area: kira;
   }
 
@@ -75,21 +69,21 @@ gap: 2em;
   .card .header{
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 4em 1fr;
+      grid-columns: 4em 1fr;
       grid-template-columns: 4em 1fr;
-  -ms-grid-rows: 1.5em 1.5em;
+      grid-rows: 1.5em 1.5em;
       grid-template-rows: 1.5em 1.5em;
       grid-template-areas: "pic name" "pic position";
-  -webkit-box-align: center;
-      -ms-flex-align: center;
+      -webkit-box-align: center;
+      flex-align: center;
           align-items: center;
 
   }
 
   .card .header img{
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
+    grid-row: 1;
+    grid-row-span: 2;
+    grid-column: 1;
     grid-area: pic;
     border-radius: 60%;
     width: 4em;
@@ -98,8 +92,8 @@ gap: 2em;
   }
 
   .card .header .name{
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
+    grid-row: 1;
+    grid-column: 2;
     grid-area: name;
     color: #cfcfcf;
     font-weight: 600;
@@ -107,8 +101,8 @@ gap: 2em;
   }
 
   .card .header .position{
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
+    grid-row: 2;
+    grid-column: 2;
     grid-area: position;
     color: #cfcfcf;
     opacity: 50%;
